@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tq.Reportcls">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: #0f9d58;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="9.0" onAction="#close_window" prefHeight="51.0" prefWidth="52.0" style="-fx-cursor: hand;" text="X" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow height="49.32" radius="11.83" width="0.0" />
+         </effect>
+      </Pane>
+      <ListView fx:id="lst" layoutY="82.0" prefHeight="327.0" prefWidth="600.0" style="-fx-border-color: #FFF;" />
+   </children>
+</AnchorPane>

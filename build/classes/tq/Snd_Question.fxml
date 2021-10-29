@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="623.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tq.Snd_QuestionController">
+   <children>
+      <Pane prefHeight="414.0" prefWidth="272.0" style="-fx-background-color: #ee7b15;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="7.0" onAction="#onClick_cls_btn_snd_frm" prefHeight="60.0" prefWidth="62.0" style="-fx-cursor: hand;" text="X" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icn.png" />
+               </image>
+               <effect>
+                  <Reflection />
+               </effect>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="220.0" text="فرم ارسال و دریافت اطلاعات از دستگاه ها" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="0.01" height="134.85" radius="67.9625" width="139.0" />
+         </effect>
+      </Pane>
+      <JFXSpinner layoutX="425.0" layoutY="191.0" />
+      <Label fx:id="snd_text_View" alignment="CENTER" layoutX="273.0" layoutY="63.0" prefHeight="128.0" prefWidth="337.0" text="در حال ارسال اطلاعات به وسایل" textAlignment="RIGHT" textFill="#ee7b15">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="281.0" layoutY="340.0" onAction="#show_about_by_net" prefHeight="60.0" prefWidth="62.0" style="-fx-background-color: #ee7b15; -fx-background-radius: 500px; -fx-cursor: hand;" text="نتایج" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

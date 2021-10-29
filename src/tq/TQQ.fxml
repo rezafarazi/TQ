@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="673.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tq.TQQController">
+   <children>
+      <JFXTextField fx:id="quest" alignment="CENTER" focusColor="#0f9d58" labelFloat="true" layoutX="20.0" layoutY="99.0" maxWidth="639.0" minWidth="610.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="639.0" promptText="سوال" />
+      <JFXTextField fx:id="jvb1" focusColor="#0f9d58" labelFloat="true" layoutX="20.0" layoutY="162.0" maxWidth="543.0" minWidth="543.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="543.0" promptText="جواب اول" />
+      <JFXTextField fx:id="jvb2" focusColor="#0f9d58" labelFloat="true" layoutX="20.0" layoutY="211.0" maxWidth="543.0" minWidth="543.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="543.0" promptText="جواب دوم" />
+      <JFXTextField fx:id="jvb3" focusColor="#0f9d58" labelFloat="true" layoutX="20.0" layoutY="265.0" maxWidth="543.0" minWidth="543.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="543.0" promptText="جواب سوم" />
+      <JFXTextField fx:id="jvb4" focusColor="#0f9d58" labelFloat="true" layoutX="20.0" layoutY="317.0" maxWidth="543.0" minWidth="543.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="543.0" promptText="جواب چهارم" />
+      <JFXRadioButton fx:id="jvbr1" layoutX="563.0" layoutY="169.0" prefHeight="17.0" prefWidth="36.0" text=" " textAlignment="CENTER">
+         <toggleGroup>
+            <ToggleGroup fx:id="selectgrp" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="jvbr2" layoutX="563.0" layoutY="218.0" prefHeight="17.0" prefWidth="36.0" text=" " textAlignment="CENTER" toggleGroup="$selectgrp" />
+      <JFXRadioButton fx:id="jvbr3" layoutX="563.0" layoutY="272.0" prefHeight="17.0" prefWidth="36.0" text=" " textAlignment="CENTER" toggleGroup="$selectgrp" />
+      <JFXRadioButton fx:id="jvbr4" layoutX="563.0" layoutY="324.0" prefHeight="17.0" prefWidth="36.0" text=" " textAlignment="CENTER" toggleGroup="$selectgrp" />
+      <Pane layoutY="-1.0" prefHeight="60.0" prefWidth="673.0" style="-fx-background-color: #0f9d58;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="6.0" onAction="#ClsInsert" style="-fx-cursor: hand;" text="X" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="268.0" layoutY="9.0" text="وارد کردن اطلاعات" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="98.09" radius="24.0225" width="0.0" />
+         </effect>
+      </Pane>
+      <JFXButton layoutX="606.0" layoutY="377.0" onAction="#end_btn_click" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: #0f9d58; -fx-background-radius: 5em; -fx-cursor: hand;" text="پایان" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton layoutX="20.0" layoutY="377.0" onAction="#nxt_btn_click" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: #0f9d58; -fx-background-radius: 5em; -fx-cursor: hand;" text="بعدی" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</AnchorPane>

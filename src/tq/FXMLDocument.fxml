@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="658.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tq.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="418.0" prefWidth="304.0" style="-fx-background-color: #09c;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="14.0" onAction="#Ext" prefHeight="51.0" prefWidth="62.0" style="-fx-cursor: hand;" text="X" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="77.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icn.png" />
+               </image>
+               <effect>
+                  <Reflection />
+               </effect>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="312.0" text="این برنامه سرور تحت کامپیوتر نوشته شده است" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" height="0.0" radius="34.34" width="139.36" />
+         </effect></Pane>
+      <Pane layoutY="337.0" prefHeight="81.0" prefWidth="663.0" style="-fx-background-color: #09c;" visible="false" />
+      <JFXButton fx:id="newq_btn" layoutX="381.0" layoutY="104.0" onAction="#newquestions" style="-fx-background-color: #09c; -fx-cursor: hand;" text="طراح سوالات جدید" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="yes_btn" layoutX="536.0" layoutY="200.0" onAction="#yes_btn_onclick" style="-fx-cursor: hand;" text="بله" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="no_btn" layoutX="398.0" layoutY="200.0" onAction="#no_btn_onclick" style="-fx-cursor: hand;" text="خیر" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="txt_lbl" layoutX="398.0" layoutY="142.0" text="آیا سوالات قبلی پاک شود ؟" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="snd_btn_Main_frm" layoutX="381.0" layoutY="179.0" onAction="#onclick_snd_btn" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #09c; -fx-cursor: hand;" text="ارسال سوالات" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
